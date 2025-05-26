@@ -1,4 +1,4 @@
-module go-cache
+module github.com/v03413/go-cache
 
 go 1.24
 
