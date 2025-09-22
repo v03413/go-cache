@@ -1,8 +1,9 @@
 package cache
 
 import (
-	"github.com/patrickmn/go-cache"
 	"time"
+
+	"github.com/patrickmn/go-cache"
 )
 
 var Cache *cache.Cache
@@ -23,4 +24,8 @@ func Get(k string) (interface{}, bool) {
 	}
 
 	return x, true
+}
+
+func Delete(k string) {
+	Cache.Delete(k)
 }
